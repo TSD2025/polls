@@ -36,6 +36,7 @@
     p {
       font-size: 1.3rem;
       margin-top: 10px;
+      margin-bottom: 30px;
       color: #f1c40f;
     }
 
@@ -48,12 +49,38 @@
       max-width: 600px;
       box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
     }
+
+    /* Styled poll links */
+    .poll-link {
+      display: inline-block;
+      background-color: #000;
+      color: #ffd700;
+      text-decoration: none;
+      border: 2px solid #ffd700;
+      border-radius: 5px;
+      padding: 12px 25px;
+      margin: 10px;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+    }
+
+    .poll-link:hover {
+      background-color: #ffd700;
+      color: #000;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+      transform: translateY(-3px);
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Senior Dinner 2025</h1>
     <p>Below are the voting polls</p>
+
+    <a href="https://app.polling.com/forms/60472579-1dfa-4ddb-a634-6dbdc5c2527c?preview=true" class="poll-link" target="_blank">Best Dressed Teacher</a>
+    <a href="https://app.polling.com/forms/08037801-5507-40f9-8f14-556e841a9068?preview=true" class="poll-link" target="_blank">Best Dressed Girl</a>
+    <a href="https://app.polling.com/forms/e6603e3c-a741-4c63-874a-3924bc4b6fbb?preview=true" class="poll-link" target="_blank">Best Dressed Guy</a>
   </div>
 </body>
 </html>
